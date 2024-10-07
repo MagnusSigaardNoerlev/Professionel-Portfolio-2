@@ -1,0 +1,72 @@
+/* IMPORTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* UTILLITIES */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* HEADER START */
+nav {
+    padding: 10px 20px;
+  }
+  
+  header {
+    background-color: grey;
+    padding: 10px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    position: fixed;
+  }
+  
+  .header-ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 50px; 
+    margin: 0;
+    padding: 0;
+}
+  
+  .header-ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-ul li a:hover {
+    color: red;
+  }
+/* HEADER SLUT */
