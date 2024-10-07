@@ -37,6 +37,7 @@ h6,
 
 p {
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
 }
 
 /* HEADER START */
@@ -70,3 +71,45 @@ nav {
     color: red;
   }
 /* HEADER SLUT */
+
+.intro {
+    display: flex;
+    gap: 50px;
+}
+
+.intro h1 {
+    margin: 0;
+    margin-top: 105px;
+}
+
+.intro h3 {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.billedeAfMig {
+    margin-top: 105px;
+    height: 400px;
+    width: 500px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.lokation,
+.ledighed {
+    display: flex;
+    gap: 10px;
+}
+
+.lokation img,
+.ledighed img{
+    width: 22px;
+    height: 23px;
+}
+
+.lokation {
+    margin-top: 50px;
+}
+
+.kompetencer h2{
+    margin-top: 50px;
+}
