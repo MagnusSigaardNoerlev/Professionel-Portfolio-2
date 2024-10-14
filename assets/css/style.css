@@ -42,7 +42,7 @@ a {
 }
 
 /* HEADER START */
-nav {
+  nav {
     padding: 10px 20px;
   }
   
@@ -62,13 +62,18 @@ nav {
     gap: 50px; 
     margin: 0;
     padding: 0;
-}
+  }
   
   .header-ul li a {
     text-decoration: none;
     color: white;
   }
+
   .header-ul li a:hover {
+    color: red;
+  }
+
+  .header-ul li a.active {
     color: red;
   }
 /* HEADER SLUT */
@@ -119,7 +124,7 @@ nav {
 /* INTRO SEKTION SLUT */
 
 /* LIDT OM MIG SEKTION START */
-.about-section {
+.lidtOmMig-section {
   background-color: #333; 
   color: white;
   padding: 40px;
@@ -127,7 +132,7 @@ nav {
   margin-bottom: 75px; 
 }
 
-.about-container {
+.lidtOmMig-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px; 
@@ -135,22 +140,44 @@ nav {
   margin: 0 auto; 
 }
 
-.about-container h2 {
-  font-size: 2em;
+.lidtOmMig-container h2 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.about-container p {
-  font-size: 1em;
+.lidtOmMig-container p {
   line-height: 1.6;
 }
 /* LIDT OM MIG SEKTION SLUT */
+
+/* FEP FORSIDE SEKTION START */
+.fepForside{
+  display: flex;
+}
+
+.projekter {
+  background-image: url(../img/migVedPc.png);
+  border-radius: 200px;
+  height: 400px;
+  width: 400px;
+}
+
+.spoergsmaal{
+  background-image: url(../img/handAndPhone.png);
+  border-radius: 200px;
+  height: 400px;
+  width: 400px;
+}
+/* FEP FORSIDE SEKTION SLUT */
 
 /* FOOTER START */
 footer {
   background-color: darkorange;
   color: white;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* SKAL SLETTES */
+  margin-top: 150px; 
 }
 
 .footer-container {
@@ -168,10 +195,6 @@ footer {
 .footer-section h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
-}
-
-.footer-section p, .footer-section ul {
-  font-size: 0.9em;
 }
 
 .footer-section ul {
@@ -209,8 +232,8 @@ footer {
 }
 
 .footer-section.socials a img {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
 }
 
 .footer-section.socials a img:hover {
