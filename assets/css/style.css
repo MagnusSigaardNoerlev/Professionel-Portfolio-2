@@ -36,48 +36,61 @@ h6,
 }
 
 p,
-a {
+a,
+ul {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
 }
 
 /* HEADER START */
-  nav {
-    padding: 10px 20px;
-  }
-  
-  header {
-    background-color: darkorange;
-    padding: 10px;
-    width: 100%;
-    font-family: "Noto Sans", sans-serif;
-    position: fixed;
-  }
-  
-  .header-ul {
-    list-style: none; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    gap: 50px; 
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header-ul li a {
-    text-decoration: none;
-    color: white;
-  }
+nav {
+  padding: 10px 20px;
+}
 
-  .header-ul li a:hover {
-    color: red;
-  }
+header {
+  background-color: darkorange;
+  padding: 10px;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  position: fixed;
+  z-index: 3;
+}
 
-  .header-ul li a.active {
-    color: red;
-  }
+.header-ul {
+  list-style: none; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 50px; 
+  margin: 0;
+  padding: 0;
+  position: relative; 
+}
+
+.header-ul li {
+  position: relative; 
+}
+
+.header-ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-ul li a:hover {
+  color: #ff4d4d;
+}
+
+.active:after {
+  content: "";
+  width: 60px;
+  height: 5px;
+  background: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* HEADER SLUT */
-
 
 /* INTRO SEKTION */
 .intro {
@@ -153,6 +166,8 @@ a {
 /* FEP FORSIDE SEKTION START */
 .fepForside{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .projekter {
@@ -160,6 +175,16 @@ a {
   border-radius: 200px;
   height: 400px;
   width: 400px;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .spoergsmaal{
@@ -167,17 +192,97 @@ a {
   border-radius: 200px;
   height: 400px;
   width: 400px;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.projekter::before,
+.spoergsmaal::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 200px;
+    z-index: 1;
+}
+
+.projekter p, .spoergsmaal p {
+  z-index: 2;
+}
+
+.fepForside .button {
+  margin-top: 20px; 
+  background-color: #ff4d4d; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none; 
+}
+
+.fepForside .button:hover{
+  background-color: #ff1a1a; 
+  transform: scale(1.2);
 }
 /* FEP FORSIDE SEKTION SLUT */
+
+/* KONTAKT SIDE STAR */
+.hero{
+  height: 75vh;
+  width: 100%;
+}
+
+.kontaktMig {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 800px; 
+  margin: 0 auto;
+  gap: 20px; 
+}
+
+.kontaktMig h1 {
+  font-size: 32px;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.kontaktMig h3 {
+  margin: 25px 0 0 0;
+}
+
+.kontaktMig p {
+  max-width: 60ch;
+}
+
+.kontaktMig span{
+  font-weight: bold;
+}
+
+.kontaktMig ul li{
+  padding: 10px;
+}
+/* KONTAKT SIDE SLUT */
 
 /* FOOTER START */
 footer {
   background-color: darkorange;
   color: white;
   padding-top: 20px;
-  padding-bottom: 20px;
-  /* SKAL SLETTES */
-  margin-top: 150px; 
+  padding-bottom: 20px; 
+  margin-top: 75px;
 }
 
 .footer-container {
@@ -211,16 +316,27 @@ footer {
   text-decoration: none;
 }
 
-.email,
-.phone {
+.footer-section ul li:hover {
+  transform: scale(1.2);
+}
+
+.email a,
+.phone a{
   display: flex;
   gap: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 .email img,
 .phone img {
   width: 24px;
   height: 24px;
+}
+
+.email:hover,
+.phone:hover {
+  transform: scale(1.2);
 }
 
 .email {
@@ -238,7 +354,6 @@ footer {
 
 .footer-section.socials a img:hover {
   transform: scale(1.2);
-  cursor: pointer; 
 }
 
 .footer-bottom {
@@ -252,5 +367,4 @@ footer {
 .footer-bottom p {
   margin: 0;
 }
-
 /* FOOTER SLUT */
