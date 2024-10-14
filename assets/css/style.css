@@ -35,7 +35,8 @@ h6,
   font-family: "Open Sans", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
 }
@@ -46,7 +47,7 @@ nav {
   }
   
   header {
-    background-color: grey;
+    background-color: darkorange;
     padding: 10px;
     width: 100%;
     font-family: "Noto Sans", sans-serif;
@@ -72,6 +73,8 @@ nav {
   }
 /* HEADER SLUT */
 
+
+/* INTRO SEKTION */
 .intro {
     display: flex;
     gap: 50px;
@@ -113,3 +116,118 @@ nav {
 .kompetencer h2{
     margin-top: 50px;
 }
+/* INTRO SEKTION SLUT */
+
+/* LIDT OM MIG SEKTION START */
+.about-section {
+  background-color: #333; 
+  color: white;
+  padding: 40px;
+  margin-top: 75px; 
+  margin-bottom: 75px; 
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.about-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+/* LIDT OM MIG SEKTION SLUT */
+
+/* FOOTER START */
+footer {
+  background-color: darkorange;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  max-width: 50ch;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 0.9em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.email,
+.phone {
+  display: flex;
+  gap: 10px;
+}
+
+.email img,
+.phone img {
+  width: 24px;
+  height: 24px;
+}
+
+.email {
+  margin-bottom: 10px;
+}
+
+.footer-section.socials a {
+  margin-right: 10px;
+}
+
+.footer-section.socials a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-section.socials a img:hover {
+  transform: scale(1.2);
+  cursor: pointer; 
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 0.8em;
+  border-top: 1px solid orange;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* FOOTER SLUT */
