@@ -42,6 +42,13 @@ ul {
   margin: 0;
 }
 
+.greyBackground{
+  margin-top: 75px;
+  padding-bottom: 75px;
+  background-color: #333;
+  align-items: center;
+}
+
 /* HEADER START */
 nav {
   padding: 10px 20px;
@@ -138,11 +145,9 @@ header {
 
 /* LIDT OM MIG SEKTION START */
 .lidtOmMig-section {
-  background-color: #333; 
   color: white;
   padding: 40px;
-  margin-top: 75px; 
-  margin-bottom: 75px; 
+  margin-top: 75px;  
 }
 
 .lidtOmMig-container {
@@ -164,7 +169,7 @@ header {
 /* LIDT OM MIG SEKTION SLUT */
 
 /* FEP FORSIDE SEKTION START */
-.fepForside{
+.fep{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -185,6 +190,7 @@ header {
   color: white;
   position: relative;
   overflow: hidden;
+  margin-top: 75px;
 }
 
 .spoergsmaal{
@@ -202,6 +208,7 @@ header {
   color: white;
   position: relative;
   overflow: hidden;
+  margin-top: 75px;
 }
 
 .projekter::before,
@@ -213,7 +220,6 @@ header {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 200px;
     z-index: 1;
 }
 
@@ -221,7 +227,7 @@ header {
   z-index: 2;
 }
 
-.fepForside .button {
+.fep .button {
   margin-top: 20px; 
   background-color: #ff4d4d; 
   color: white; 
@@ -233,7 +239,7 @@ header {
   text-decoration: none; 
 }
 
-.fepForside .button:hover{
+.fep .button:hover{
   background-color: #ff1a1a; 
   transform: scale(1.2);
 }
@@ -275,6 +281,98 @@ header {
   padding: 10px;
 }
 /* KONTAKT SIDE SLUT */
+
+/* PORTFOLIO SIDE START */
+.casestudies {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.casestudies h1 {
+  margin-top: 105px;
+}
+
+.casestudies hr {
+  margin-bottom: 35px;
+  width: 100%;
+  border: 1px solid darkorange;
+}
+
+.caseStudy {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  background-color: #ff4d4d;
+  overflow: hidden;
+}
+
+.caseStudy:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.caseInfo {
+  padding: 35px;
+  width: 50%;
+}
+
+.caseInfo p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.caseInfo span {
+  font-weight: bold;
+}
+
+.caseImg {
+  width: 50%;
+}
+
+.caseImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.migFep {
+  background-image: url(../img/migFep.png);
+  border-radius: 200px;
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 75px;
+}
+
+.migFep::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.migFep p {
+  z-index: 2;
+}
+/* PORTFOLIO SIDE SLUT */
 
 /* FOOTER START */
 footer {
