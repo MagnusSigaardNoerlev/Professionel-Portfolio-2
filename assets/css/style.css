@@ -219,7 +219,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -366,7 +366,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -560,6 +560,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.footer-section p{
+  text-align: left;
+}
+
 .footer-section.socials a {
   margin-right: 10px;
 }
@@ -585,3 +589,219 @@ footer {
   margin: 0;
 }
 /* FOOTER SLUT */
+
+
+
+
+
+
+/* MEDIA QUERRIES FOR HEADER OG FOOTER START */
+@media (max-width: 600px) {
+  .header-ul {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .header-ul li a {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-section {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-section.about,
+  .footer-section.contacts,
+  .footer-section.socials {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header-ul {
+    gap: 20px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .footer-section {
+    max-width: 45%;
+    padding: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-ul {
+    gap: 50px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 50px;
+  }
+
+  .footer-section {
+    max-width: 50ch;
+  }
+}
+/* MEDIA QUERRIES FOR HEADER OG FOOTER SLUT */
+
+
+
+
+
+/* MEDIA QUERRIES FOR FORSIDE START */
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro h1 {
+    margin-top: 0;
+  }
+
+  .billedeAfMig {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+
+  .lokation,
+  .ledighed {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .kompetencer h2 {
+    margin-top: 30px;
+  }
+
+  .kompetencer p {
+    padding: 0 20px 0 20px;
+  }
+
+  .fep {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projekter,
+  .spoergsmaal {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+
+  .projekter p, .spoergsmaal p {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .fep .button {
+    padding: 8px 16px; 
+    font-size: 0.9em;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .intro h1{
+    margin: 0;
+  }
+
+  .billedeAfMig {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 0;
+  }
+
+  .lokation,
+  .ledighed {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .fep {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projekter,
+  .spoergsmaal {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 0;
+  }
+
+  .projekter {
+    margin-top: 75px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .intro {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .billedeAfMig {
+    width: 500px;
+    height: 400px;
+    margin-top: 105px;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .fep {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .projekter,
+  .spoergsmaal {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* MEDIA QUERRIES FOR FORSIDE SLUT */
+
