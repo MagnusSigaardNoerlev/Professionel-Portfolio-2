@@ -224,6 +224,7 @@ header {
 }
 
 .projekter p, .spoergsmaal p {
+  padding: 25px;
   z-index: 2;
 }
 
@@ -370,6 +371,7 @@ header {
 }
 
 .migFep p {
+  padding: 25px;
   z-index: 2;
 }
 /* PORTFOLIO SIDE SLUT */
@@ -425,6 +427,8 @@ header {
   text-decoration: none;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .demo .button:hover{
@@ -469,7 +473,6 @@ header {
 .stepText {
   display: flex;
   align-items: center;
-  white-space: pre-wrap;
   background-color: white;
   color: black;
   font-family: "Noto Sans", sans-serif;
