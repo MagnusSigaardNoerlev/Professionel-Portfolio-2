@@ -49,6 +49,13 @@ ul {
   align-items: center;
 }
 
+.greyBackgroundFep{
+  margin-top: 75px;
+  padding-bottom: 25px;
+  background-color: #333;
+  align-items: center;
+}
+
 /* HEADER START */
 nav {
   padding: 10px 20px;
@@ -61,6 +68,8 @@ header {
   font-family: "Noto Sans", sans-serif;
   position: fixed;
   z-index: 3;
+  top: 0;
+  left: 0;
 }
 
 .header-ul {
@@ -71,7 +80,6 @@ header {
   gap: 50px; 
   margin: 0;
   padding: 0;
-  position: relative; 
 }
 
 .header-ul li {
@@ -246,7 +254,7 @@ header {
 }
 /* FEP FORSIDE SEKTION SLUT */
 
-/* KONTAKT SIDE STAR */
+/* KONTAKT SIDE START */
 .hero{
   height: 75vh;
   width: 100%;
@@ -332,12 +340,14 @@ header {
 
 .caseImg {
   width: 50%;
+  height: auto;
 }
 
 .caseImg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 
@@ -722,14 +732,8 @@ footer {
     margin-top: 20px;
   }
 
-  .projekter p, .spoergsmaal p {
-    font-size: 1em;
-    padding: 10px;
-  }
-
-  .fep .button {
-    padding: 8px 16px; 
-    font-size: 0.9em;
+  .greyBackground {
+    margin-bottom: 25px;
   }
 }
 
@@ -761,7 +765,7 @@ footer {
 
   .fep {
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
   }
 
   .projekter,
@@ -772,36 +776,202 @@ footer {
     border-radius: 0;
   }
 
-  .projekter {
-    margin-top: 75px;
-  }
-}
-
-
-@media (min-width: 1025px) {
-  .intro {
-    flex-direction: row;
-    gap: 50px;
-  }
-
-  .billedeAfMig {
-    width: 500px;
-    height: 400px;
-    margin-top: 105px;
-    border-radius: 0px 20px 20px 0px;
-  }
-
-  .fep {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .projekter,
-  .spoergsmaal {
-    width: 400px;
-    height: 400px;
+  .greyBackground {
+    margin-bottom: 25px;
   }
 }
 /* MEDIA QUERRIES FOR FORSIDE SLUT */
 
+
+
+/* MEDIA QUERRIES FOR PORTFOLIO SIDE START */
+@media (max-width: 600px) {
+  .casestudies {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .caseStudy {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .caseInfo {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .caseImg {
+    width: 100%;
+  }
+
+  .migFep {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+
+  .greyBackgroundFep {
+    background-color: white;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .casestudies {
+    max-width: 90%;
+    padding: 0 20px;
+  }
+
+  .caseStudy {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .caseInfo {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .caseImg {
+    width: 100%;
+  }
+
+  .migFep {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+
+  .greyBackgroundFep {
+    background-color: white;
+  }
+}
+/* MEDIA QUERRIES FOR PORTFOLIO SIDE SLUT */
+
+
+/* MEDIA QUERRIES FOR CASESTUDY SIDE START */
+@media (max-width: 600px) {
+  .breadcrumbs,
+  .casestudyIntro {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .breadcrumbs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 105px;
+    align-items: center;
+  }
+
+  .breadcrumbs h6 {
+    margin-top: 0;
+  }
+
+  .demo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .demo .button {
+    height: 75px;
+  }
+
+  .stepsContent {
+    grid-template-columns: 1fr;
+  }
+
+  .stepsButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .stepText {
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .stepText img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .stepText p {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .breadcrumbs,
+  .casestudyIntro {
+    max-width: 90%;
+    padding: 0 20px;
+  }
+
+  .stepsContent {
+    grid-template-columns: 1fr;
+  }
+
+  .stepsButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stepText {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .stepText img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .stepText p {
+    width: 100%;
+    padding: 15px;
+  }
+}
+/* MEDIA QUERRIES FOR CASESTUDY SIDE SLUT */
+
+/* MEDIA QUERRIES FOR KONTAKT SIDE START */
+@media (max-width: 600px) {
+  .hero {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .kontaktMig {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  .kontaktMig ul {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero {
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  .kontaktMig {
+    max-width: 90%;
+    padding: 0 25px;
+  }
+
+  .kontaktMig ul {
+    padding-left: 20px;
+  }
+}
+/* MEDIA QUERRIES FOR KONTAKT SIDE SLUT */
