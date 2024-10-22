@@ -859,6 +859,10 @@ footer {
     padding: 0 10px;
   }
 
+  .casestudyIntro h1 {
+    font-size: 12vw;
+  }
+
   .breadcrumbs {
     flex-direction: row;
     flex-wrap: wrap;
@@ -885,8 +889,7 @@ footer {
   }
 
   .stepsButtons {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
   }
 
