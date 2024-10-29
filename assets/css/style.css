@@ -128,6 +128,7 @@ header {
     height: 400px;
     width: 500px;
     border-radius: 0px 20px 20px 0px;
+    object-fit: cover;
 }
 
 .lokation,
