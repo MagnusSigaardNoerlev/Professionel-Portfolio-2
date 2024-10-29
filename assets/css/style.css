@@ -109,48 +109,110 @@ header {
 
 /* INTRO SEKTION */
 .intro {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
 }
 
 .intro h1 {
-    margin: 0;
-    margin-top: 105px;
+  margin: 0;
+  margin-top: 105px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1s forwards;
+  animation-delay: 0.2s;
 }
 
 .intro h3 {
-    margin: 0;
-    font-weight: lighter;
+  margin: 0;
+  font-weight: lighter;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1.5s forwards;
+  animation-delay: 0.4s;
 }
 
 .billedeAfMig {
-    margin-top: 105px;
-    height: 400px;
-    width: 500px;
-    border-radius: 0px 20px 20px 0px;
-    object-fit: cover;
+  margin-top: 105px;
+  height: 400px;
+  width: 500px;
+  border-radius: 0px 20px 20px 0px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(-100px) scaleX(0.8);
+  animation: pullInFromSide 1.5s forwards ease-out;
+  animation-delay: 0.6s;
 }
 
-.lokation,
-.ledighed {
-    display: flex;
-    gap: 10px;
+.introText,
+.kompetencer {
+  opacity: 0;
+  transform: translateY(-100%); 
+  animation: scrollEffect 2s forwards ease-out;
 }
 
-.lokation img,
-.ledighed img{
-    width: 22px;
-    height: 23px;
+.introText {
+  margin-top: 50px;
+  width: 60ch;
+  line-height: 1.6;
+  animation-delay: 1s; 
 }
 
-.lokation {
-    margin-top: 50px;
+.kompetencer {
+  animation-delay: 1.2s; 
 }
 
-.kompetencer h2{
-    margin-top: 50px;
+.kompetencer h2 {
+  margin-top: 50px;
+}
+
+/* Keyframe animationer */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pullInFromSide {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) scaleX(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-100%); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
 }
 /* INTRO SEKTION SLUT */
+
+
 
 /* LIDT OM MIG SEKTION START */
 .lidtOmMig-section {
@@ -293,6 +355,20 @@ header {
 /* KONTAKT SIDE SLUT */
 
 /* PORTFOLIO SIDE START */
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0; 
+}
+
+#loading img {
+  width: 250px; 
+  height: 250px;
+}
+
+
 .casestudies {
   display: grid;
   grid-template-columns: 1fr;
